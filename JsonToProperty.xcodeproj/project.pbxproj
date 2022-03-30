@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFA13CC827F461110092D6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13CC727F461110092D6D3 /* AppDelegate.m */; };
+		BFA13CCB27F461110092D6D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13CCA27F461110092D6D3 /* ViewController.m */; };
+		BFA13CCD27F461130092D6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA13CCC27F461130092D6D3 /* Assets.xcassets */; };
+		BFA13CD027F461130092D6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA13CCE27F461130092D6D3 /* Main.storyboard */; };
+		BFA13CD227F461130092D6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13CD127F461130092D6D3 /* main.m */; };
+		BFA13CFC27F464BA0092D6D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA13CFB27F464BA0092D6D3 /* Cocoa.framework */; };
+		BFA13CFE27F464BA0092D6D3 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA13CFD27F464BA0092D6D3 /* XcodeKit.framework */; };
+		BFA13D0227F464BA0092D6D3 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13D0127F464BA0092D6D3 /* SourceEditorExtension.m */; };
+		BFA13D0527F464BA0092D6D3 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13D0427F464BA0092D6D3 /* SourceEditorCommand.m */; };
+		BFA13D0A27F464BA0092D6D3 /* JsonToPropertyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BFA13CF927F464BA0092D6D3 /* JsonToPropertyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BFA13D1127F478000092D6D3 /* ESClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13D1027F478000092D6D3 /* ESClassInfo.m */; };
+		BFA13D1427F478310092D6D3 /* ESJsonFormatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA13D1327F478310092D6D3 /* ESJsonFormatManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFA13D0827F464BA0092D6D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFA13CBB27F461110092D6D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFA13CF827F464BA0092D6D3;
+			remoteInfo = JsonToPropertyExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFA13D0E27F464BA0092D6D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFA13D0A27F464BA0092D6D3 /* JsonToPropertyExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BFA13CC327F461110092D6D3 /* JsonToProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonToProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA13CC627F461110092D6D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFA13CC727F461110092D6D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFA13CC927F461110092D6D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BFA13CCA27F461110092D6D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFA13CCC27F461130092D6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFA13CCF27F461130092D6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFA13CD127F461130092D6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFA13CD327F461130092D6D3 /* JsonToProperty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JsonToProperty.entitlements; sourceTree = "<group>"; };
+		BFA13CDC27F461130092D6D3 /* JsonToPropertyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonToPropertyTests.m; sourceTree = "<group>"; };
+		BFA13CE627F461130092D6D3 /* JsonToPropertyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonToPropertyUITests.m; sourceTree = "<group>"; };
+		BFA13CE827F461130092D6D3 /* JsonToPropertyUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonToPropertyUITestsLaunchTests.m; sourceTree = "<group>"; };
+		BFA13CF927F464BA0092D6D3 /* JsonToPropertyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JsonToPropertyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA13CFB27F464BA0092D6D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BFA13CFD27F464BA0092D6D3 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		BFA13D0027F464BA0092D6D3 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		BFA13D0127F464BA0092D6D3 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		BFA13D0327F464BA0092D6D3 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		BFA13D0427F464BA0092D6D3 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		BFA13D0627F464BA0092D6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA13D0727F464BA0092D6D3 /* JsonToPropertyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JsonToPropertyExtension.entitlements; sourceTree = "<group>"; };
+		BFA13D0F27F478000092D6D3 /* ESClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESClassInfo.h; sourceTree = "<group>"; };
+		BFA13D1027F478000092D6D3 /* ESClassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESClassInfo.m; sourceTree = "<group>"; };
+		BFA13D1227F478310092D6D3 /* ESJsonFormatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESJsonFormatManager.h; sourceTree = "<group>"; };
+		BFA13D1327F478310092D6D3 /* ESJsonFormatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESJsonFormatManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFA13CC027F461110092D6D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA13CF627F464BA0092D6D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA13CFC27F464BA0092D6D3 /* Cocoa.framework in Frameworks */,
+				BFA13CFE27F464BA0092D6D3 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFA13CBA27F461110092D6D3 = {
+			isa = PBXGroup;
+			children = (
+				BFA13CC527F461110092D6D3 /* JsonToProperty */,
+				BFA13CDB27F461130092D6D3 /* JsonToPropertyTests */,
+				BFA13CE527F461130092D6D3 /* JsonToPropertyUITests */,
+				BFA13CFF27F464BA0092D6D3 /* JsonToPropertyExtension */,
+				BFA13CFA27F464BA0092D6D3 /* Frameworks */,
+				BFA13CC427F461110092D6D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFA13CC427F461110092D6D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFA13CC327F461110092D6D3 /* JsonToProperty.app */,
+				BFA13CF927F464BA0092D6D3 /* JsonToPropertyExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFA13CC527F461110092D6D3 /* JsonToProperty */ = {
+			isa = PBXGroup;
+			children = (
+				BFA13CC627F461110092D6D3 /* AppDelegate.h */,
+				BFA13CC727F461110092D6D3 /* AppDelegate.m */,
+				BFA13CC927F461110092D6D3 /* ViewController.h */,
+				BFA13CCA27F461110092D6D3 /* ViewController.m */,
+				BFA13CCC27F461130092D6D3 /* Assets.xcassets */,
+				BFA13CCE27F461130092D6D3 /* Main.storyboard */,
+				BFA13CD127F461130092D6D3 /* main.m */,
+				BFA13CD327F461130092D6D3 /* JsonToProperty.entitlements */,
+			);
+			path = JsonToProperty;
+			sourceTree = "<group>";
+		};
+		BFA13CDB27F461130092D6D3 /* JsonToPropertyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFA13CDC27F461130092D6D3 /* JsonToPropertyTests.m */,
+			);
+			path = JsonToPropertyTests;
+			sourceTree = "<group>";
+		};
+		BFA13CE527F461130092D6D3 /* JsonToPropertyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFA13CE627F461130092D6D3 /* JsonToPropertyUITests.m */,
+				BFA13CE827F461130092D6D3 /* JsonToPropertyUITestsLaunchTests.m */,
+			);
+			path = JsonToPropertyUITests;
+			sourceTree = "<group>";
+		};
+		BFA13CFA27F464BA0092D6D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA13CFB27F464BA0092D6D3 /* Cocoa.framework */,
+				BFA13CFD27F464BA0092D6D3 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA13CFF27F464BA0092D6D3 /* JsonToPropertyExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BFA13D0027F464BA0092D6D3 /* SourceEditorExtension.h */,
+				BFA13D0127F464BA0092D6D3 /* SourceEditorExtension.m */,
+				BFA13D0327F464BA0092D6D3 /* SourceEditorCommand.h */,
+				BFA13D0427F464BA0092D6D3 /* SourceEditorCommand.m */,
+				BFA13D0627F464BA0092D6D3 /* Info.plist */,
+				BFA13D0727F464BA0092D6D3 /* JsonToPropertyExtension.entitlements */,
+				BFA13D0F27F478000092D6D3 /* ESClassInfo.h */,
+				BFA13D1027F478000092D6D3 /* ESClassInfo.m */,
+				BFA13D1227F478310092D6D3 /* ESJsonFormatManager.h */,
+				BFA13D1327F478310092D6D3 /* ESJsonFormatManager.m */,
+			);
+			path = JsonToPropertyExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFA13CC227F461110092D6D3 /* JsonToProperty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA13CEC27F461130092D6D3 /* Build configuration list for PBXNativeTarget "JsonToProperty" */;
+			buildPhases = (
+				BFA13CBF27F461110092D6D3 /* Sources */,
+				BFA13CC027F461110092D6D3 /* Frameworks */,
+				BFA13CC127F461110092D6D3 /* Resources */,
+				BFA13D0E27F464BA0092D6D3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFA13D0927F464BA0092D6D3 /* PBXTargetDependency */,
+			);
+			name = JsonToProperty;
+			productName = JsonToProperty;
+			productReference = BFA13CC327F461110092D6D3 /* JsonToProperty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFA13CF827F464BA0092D6D3 /* JsonToPropertyExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA13D0B27F464BA0092D6D3 /* Build configuration list for PBXNativeTarget "JsonToPropertyExtension" */;
+			buildPhases = (
+				BFA13CF527F464BA0092D6D3 /* Sources */,
+				BFA13CF627F464BA0092D6D3 /* Frameworks */,
+				BFA13CF727F464BA0092D6D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JsonToPropertyExtension;
+			productName = JsonToPropertyExtension;
+			productReference = BFA13CF927F464BA0092D6D3 /* JsonToPropertyExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFA13CBB27F461110092D6D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BFA13CC227F461110092D6D3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BFA13CF827F464BA0092D6D3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BFA13CBE27F461110092D6D3 /* Build configuration list for PBXProject "JsonToProperty" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFA13CBA27F461110092D6D3;
+			productRefGroup = BFA13CC427F461110092D6D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFA13CC227F461110092D6D3 /* JsonToProperty */,
+				BFA13CF827F464BA0092D6D3 /* JsonToPropertyExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFA13CC127F461110092D6D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA13CCD27F461130092D6D3 /* Assets.xcassets in Resources */,
+				BFA13CD027F461130092D6D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA13CF727F464BA0092D6D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFA13CBF27F461110092D6D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA13CCB27F461110092D6D3 /* ViewController.m in Sources */,
+				BFA13CD227F461130092D6D3 /* main.m in Sources */,
+				BFA13CC827F461110092D6D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA13CF527F464BA0092D6D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA13D1127F478000092D6D3 /* ESClassInfo.m in Sources */,
+				BFA13D0227F464BA0092D6D3 /* SourceEditorExtension.m in Sources */,
+				BFA13D1427F478310092D6D3 /* ESJsonFormatManager.m in Sources */,
+				BFA13D0527F464BA0092D6D3 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFA13D0927F464BA0092D6D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFA13CF827F464BA0092D6D3 /* JsonToPropertyExtension */;
+			targetProxy = BFA13D0827F464BA0092D6D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFA13CCE27F461130092D6D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA13CCF27F461130092D6D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFA13CEA27F461130092D6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BFA13CEB27F461130092D6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BFA13CED27F461130092D6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JsonToProperty/JsonToProperty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7MJNCN462;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.JsonToProperty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		BFA13CEE27F461130092D6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JsonToProperty/JsonToProperty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7MJNCN462;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.JsonToProperty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		BFA13D0C27F464BA0092D6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JsonToPropertyExtension/JsonToPropertyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7MJNCN462;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JsonToPropertyExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JsonToPropertyExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.JsonToProperty.JsonToPropertyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		BFA13D0D27F464BA0092D6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JsonToPropertyExtension/JsonToPropertyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7MJNCN462;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JsonToPropertyExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JsonToPropertyExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.JsonToProperty.JsonToPropertyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFA13CBE27F461110092D6D3 /* Build configuration list for PBXProject "JsonToProperty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA13CEA27F461130092D6D3 /* Debug */,
+				BFA13CEB27F461130092D6D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA13CEC27F461130092D6D3 /* Build configuration list for PBXNativeTarget "JsonToProperty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA13CED27F461130092D6D3 /* Debug */,
+				BFA13CEE27F461130092D6D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA13D0B27F464BA0092D6D3 /* Build configuration list for PBXNativeTarget "JsonToPropertyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA13D0C27F464BA0092D6D3 /* Debug */,
+				BFA13D0D27F464BA0092D6D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFA13CBB27F461110092D6D3 /* Project object */;
+}

@@ -1,0 +1,14 @@
+//
+//  ViewController.h
+//  JsonToProperty
+//
+//  Created by vincent on 2022/3/30.
+//
+
+#import <Cocoa/Cocoa.h>
+
+@interface ViewController : NSViewController
+
+
+@end
+
